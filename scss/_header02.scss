@@ -1,0 +1,60 @@
+.header02 {
+    position: relative;
+    padding: 10px 0;
+    .hamburger-menu {
+        top: 50%;
+        left: 3%;
+        transform: translateY(-50%);
+    }
+    .nav-logo{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 38px;
+        color: black;
+        line-height: 80px;
+        white-space: nowrap;
+    }
+    .nav-logo a {   
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .nav-area {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        white-space: nowrap;
+        height: 60px;
+    }
+    .nav a {
+        text-decoration: none;
+        color: black;
+        text-transform: capitalize;
+        font-size: 16px;
+        margin: 0 15px;
+        line-height: 60px;
+        transition: 0.3s ease;
+    }
+    .nav a:hover,
+    .nav .active {
+        border-bottom: 2px solid rgb(8, 8, 8);
+        padding-bottom: 5px;
+    }
+    .nav-underline {
+        width: 50%;
+    }
+
+    @media screen and (max-width: $phoneLandscape) {
+        .nav-area {
+            display: none;
+        }
+        .nav-underline {
+            display: none;
+        }
+        .nav-logo {
+            font-size: 30px;
+        }
+        .bar, .bar:after, .bar:before {
+            width: 20px;
+        }
+    }
+}

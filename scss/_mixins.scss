@@ -1,0 +1,14 @@
+@mixin hamburgerBarBlack {
+    .hamburger-menu{
+        .bar,
+        .bar:before,
+        .bar:after {
+            background: #000;
+        }
+        .bar.animate:before, 
+        .bar.animate:after {
+            background: #fff;
+        }
+        
+    }
+}

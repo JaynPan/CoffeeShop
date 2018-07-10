@@ -1,0 +1,282 @@
+.menu-wrapper {
+    @include hamburgerBarBlack;
+   
+    .menu {
+        h1,h2 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p, tr,td,th {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        width: 70%;
+        position: relative;
+        background-color: #FAF3E5;
+        margin: auto;
+        
+        .bg-color {
+            position: absolute;
+            width: 85%;
+            height: 500px;
+            right: 0;
+            top: 5%;
+            z-index: 100;
+            background-color: #DEBD97;
+        }
+        .menu-title {
+            display: flex;
+            justify-content: space-between;
+        }
+        .menu-image {
+            width: 400px;
+            margin-top: 100px;
+            margin-right: 100px;
+            z-index: 200;
+        }
+        .menu-des {
+            margin-top: 200px;
+            z-index: 200;
+            width: 400px;
+        }
+        .menu-des h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 60px;
+            font-weight: bolder;
+            padding-left: 10px;
+            border-left: 8px solid black;
+            margin-bottom: 50px;
+        }
+        .menu-des p {
+            padding-left: 18px;
+            line-height: 1.5;
+        }
+        .slide-container {
+            position: relative;
+            padding-bottom: 50px;
+            z-index: 200;
+            .center {
+                .prev {
+                    position: absolute;
+                    left: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: 999;
+                }
+                .next {
+                    position: absolute;
+                    right: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: 999;
+                }
+                .fas {
+                    font-size: 60px;
+                    cursor: pointer;
+                }
+            }
+        }
+        // dots
+        .cycle-pager {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 36px;
+            z-index: 999;
+            cursor: pointer;
+            .cycle-pager-active {
+                color: rgb(180, 99, 24);
+            }
+        }
+        
+        
+    }
+    
+    .menu-detail {
+        margin-left: 100px;
+
+        .category {
+            margin-bottom: 50px;
+
+            h2 {
+            font-size: 26px;
+            font-weight: bold;
+            border-bottom: 2px solid black;
+            display: inline-block;
+            margin-bottom: 10px;
+            }
+            table {
+                border-spacing: 5px;
+            }
+            th {
+                font-weight: bold;
+                padding-bottom: 10px;
+            }
+            td {
+                font-size: 20px;
+                text-transform: capitalize;
+                line-height: 2;
+            }
+            td:nth-of-type(1){
+                padding-right: 50px;
+            }
+            td:not(:nth-of-type(1)){
+                text-align: center;
+                width: 75px;
+            }
+        } 
+        .menu-detail-image {
+            width: 400px;
+            position: absolute;
+            right: -150%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .grid-title {
+                font-size: 26px;
+                font-weight: bold;
+                margin-bottom: 40px;
+            } 
+        .category-grid {
+            display: grid;
+            grid-template-columns: minmax(200px, 1fr) 40px;
+            grid-gap: 0 40px;
+            margin-bottom: 50px;
+            margin-right: 30px;
+            .foods h2{
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 5px;
+                text-transform: capitalize;
+            }
+            .foods p {
+                margin-bottom: 20px;
+            }
+            .prices {
+                font-weight: bold;
+            }
+        }
+    }
+    .service {
+        width: 70%;
+        margin: 50px auto 20px;
+        border-bottom: 1px solid black;
+        padding-bottom: 10px;
+        
+        p {
+            line-height: 2;
+            text-align: center;
+        }
+    }
+    @media screen and (max-width: $desktopMedium) {
+        .menu {
+            width: 95%;
+        }
+    }
+    @media screen and (max-width: $tabletLandscape) {
+        .menu{
+            .menu-image {
+                width: 300px;
+            }
+            .slide-container {
+                padding-top: 50px;
+            }
+        } 
+        .service {
+            width: 90%;
+        }
+    }
+    @media screen and (max-width: $tabletPortrait) {
+        .menu {
+            .bg-color {
+                height: 400px;
+            }
+            .menu-image {
+                margin-right: 40px;
+            }
+            .menu-detail {
+                .menu-detail-image {
+                    width: 300px;
+                    margin: auto;
+                    position: initial;
+                    transform: translateY(0%);
+                }
+            }
+        }
+        
+    }
+    @media screen and (max-width: $phonePlus) {
+        .center {
+            display: none;
+        }
+        .menu-detail {
+            margin: 0 50px;
+        }
+    }
+    @media screen and (max-width: $phoneLandscape) {
+        
+        .menu {
+           .menu-des h1 {
+               font-size: 50px;
+               border-left: 6px solid black;
+           }
+           .menu-image {
+               display: none;
+           }
+           .bg-color {
+               height: 300px;
+               top:2%;
+           }
+           .menu-des {
+               margin-top: 100px;
+           }
+            .menu-detail {
+                margin: 0 20px;
+                .category {
+                    td:nth-of-type(1) {
+                        padding-right: 20px;
+                        white-space: nowrap;
+                    }
+                    h2 {
+                    font-size: 22px;
+                    }
+                    td {
+                    font-size: 16px;
+                    }
+                }
+                .menu-detail-image {
+                    width: 200px;
+                }   
+            }     
+        }
+        
+    }
+    @media screen and (max-width: $phonePortrait) {
+        .menu {
+            .menu-des {
+                h1 {
+                    font-size: 36px;
+                }
+                p {
+                    padding-right: 18px;
+                }
+            }
+            .menu-detail {
+                .category {
+                    h2 {
+                        font-size: 20px;
+                    }
+                }
+                .grid-title {
+                    font-size: 24px;
+                }
+                .category-grid {
+                    grid-gap: 0 20px;
+                    margin-right: 0;
+                    .foods h2 {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
