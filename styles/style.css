@@ -701,7 +701,7 @@ p, th, td {
   .menu-wrapper .menu-detail .menu-detail-image {
     width: 400px;
     position: absolute;
-    right: -150%;
+    right: -100%;
     top: 50%;
     transform: translateY(-50%); }
   .menu-wrapper .menu-detail .grid-title {
@@ -739,6 +739,9 @@ p, th, td {
     width: 300px; }
   .menu-wrapper .menu .slide-container {
     padding-top: 50px; }
+  .menu-wrapper .menu .menu-detail .menu-detail-image {
+    width: 250px;
+    right: -74%; }
   .menu-wrapper .service {
     width: 90%; } }
 @media screen and (max-width: 880px) {

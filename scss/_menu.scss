@@ -127,7 +127,7 @@
         .menu-detail-image {
             width: 400px;
             position: absolute;
-            right: -150%;
+            right: -100%;
             top: 50%;
             transform: translateY(-50%);
         }
@@ -179,6 +179,10 @@
             }
             .slide-container {
                 padding-top: 50px;
+            }
+            .menu-detail .menu-detail-image {
+                width: 250px;
+                right: -74%;
             }
         } 
         .service {
