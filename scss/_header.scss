@@ -75,7 +75,12 @@
         margin: 0 15px;
         transition: 0.3s ease;
     }
+<<<<<<< HEAD
     .nav a:hover {
+=======
+    .nav a:hover,
+    .nav .active {
+>>>>>>> 344bcc06b151dd7db7b4722a4553c3b9abe4edbc
         border-bottom: 2px solid white;
         padding-bottom: 5px;
     }
@@ -153,6 +158,13 @@
     .banner-info p {
         padding: 0px 40px;
     }
+<<<<<<< HEAD
+=======
+    .banner-info a {
+        color: white;
+        text-decoration: none;
+    }
+>>>>>>> 344bcc06b151dd7db7b4722a4553c3b9abe4edbc
     .banner-info p:nth-of-type(1) {
         text-align: right;
     }

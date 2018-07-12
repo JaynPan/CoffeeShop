@@ -1,0 +1,134 @@
+.contact-wrapper {
+    background-image: url(../images/contact-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    .nav a {
+        color: white;
+    }
+    .nav-logo a {
+        color: white;
+    }
+    .nav a:hover,
+    .nav .active {
+        border-bottom: 2px solid white;
+    }
+
+    .content {
+        width: 60%;
+        z-index: 300;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+        padding: 100px 0;
+
+        h1{
+            font-size: 40px;
+            font-weight: bold;
+            padding-bottom: 60px;
+        }
+        h1:after {
+            content: '';
+            display: block;
+            width: 10%;
+            padding-top: 30px;
+            border-bottom: 4px solid #C69C6D;
+        }
+
+        .contact-grid {
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 50px;
+            .contact-form {
+                max-width: 400px;
+            }
+            .contact-form input[type=text],
+            .contact-form textarea {
+                width: 100%;
+                margin-bottom: 10px;
+                padding:15px;
+                outline: none;
+                border: 1px solid rgb(255,255,255);
+                border-radius: 5px;
+                background-color: rgb(255,255,255);
+                color: rgb(19, 19, 19);
+            }
+            .contact-form textarea {
+                height: 150px;
+            }
+            .contact-form input[type=submit]{
+                width: 200px;
+                margin: 20px auto 0;
+                padding: 15px;
+                border-radius: 5px;
+                border: none;
+                color: rgb(10, 10, 10);
+                cursor: pointer;
+                background-color: #F1D38B;
+            }
+            .contact-form input[type=text]:focus,
+            .contact-form textarea:focus {
+                box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+            }
+
+            .des {
+                max-width: 400px;
+                h2 {
+                    color: rgb(185, 125, 35);
+                    font-size: 36px;
+                    font-family: 'Times New Roman', Times, serif;
+                    font-style: italic;
+                    padding-bottom: 30px;
+                }
+                p {
+                    line-height: 1.5;
+                    margin-bottom: 30px;
+                }
+                i{
+                    margin-right: 30px;   
+                }
+                .info p {
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: $tabletLandscape) {
+        .content {
+            width: 80%;
+        }
+    }
+    @media screen and (max-width: $phonePlus) {
+       
+        .content{
+            padding: 50px 0;
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                justify-items: center;
+            }
+        } 
+    }
+    @media screen and (max-width: $phonePortrait) {
+        
+        .content {
+            h1 {
+                font-size: 30px;
+                padding-bottom: 30px;
+            }
+            
+            .contact-grid {
+                .contact-form input[type=text],
+                .contact-form textarea,
+                .contact-form input[type=submit] {
+                    padding: 7px;
+                }
+
+                .des h2 {
+                    font-size: 26px;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.credit-wrapper {
+    @include hamburgerBarBlack;
+
+    .links {
+        width: 80%;
+        margin: 100px auto 200px;
+
+        a {
+            font-size: 30px;
+            display: block;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.credits-body {
+    height: 100vh;
+}
+// .credits-footer {
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+// }
