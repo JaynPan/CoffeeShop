@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/owl.carousel.css">
+    <link rel="stylesheet" href="./styles/owl.theme.default.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="icon"
+          type="images/png" 
+          href="/images/chill_cafe-favicon.png">
+    <title>Chill Coffee</title>
+</head>
+<body>
+        <div class="nav-logo">
+                <h1>Chill café</h1>
+            </div>
+            <div class="nav-area">
+                <nav class="nav desktop-nav">
+                    <a href="#">Contact</a>
+                    <a href="#">About</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Home</a>
+                    <a href="#">Reservation</a>
+                    <a href="#">Review</a>
+                </nav>
+            </div>
+            <button class="hamburger-menu">
+                <span class="hamburger-menu-content">
+                    <span class="sr-only"></span>
+                    <span class="bar"></span>
+                </span>
+            </button>
+            <div class="container">
+                    <div class="mobile-nav-wrapper">
+                        <nav class="nav-2">
+                            <ul class="mobile-menu">
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./menu.html">Menu</a></li>
+                                <li><a href="./reservation.html">Reservation</a></li>
+                                <li><a href="./review.html">Review</a></li>  
+                                <li><a href="./contact.html">Contact</a></li>         
+                            </ul> 
+                        </nav>
+                        <nav class="icon">
+                            <ul class="icon-list">
+                                <li><a href="https://plus.google.com/discover"><i class="fab fa-google-plus-square"></i></a></li>
+                                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="https://twitter.com/JayN_Pan"><i class="fab fa-twitter-square"></i></a></li>
+                                <li><a href="https://www.instagram.com/jayn.pan/"><i class="fab fa-instagram"></i></a></li>
+                            </ul>       
+                        </nav>
+                    </div>
+                    <div class="name">
+                        <label>Name</label>
+                        <p>
+                        <input type ="text"
+                                id = "myText"
+                                value = "First Name" />
+                        </p>
+                        <p>
+                        <input type = "text"
+                                id = "myText"
+                                value = "Last Name"/>
+                        </p>
+                    </div>
+                </div>
+                <script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src="./scripts/hamburger.js"></script>
+<script src="./scripts/owl.carousel.js"></script>
+<script src="./scripts/owl.autoplay.js"></script>
+<script src="./scripts/owl.navigation.js"></script>
+<script src="./scripts/owl.animate.js"></script>
+<script>
+    $('#slider-area').owlCarousel({
+    // animateOut: 'fadeOut',
+    loop:true,
+    nav: true,
+    // autoplay: true,
+    autoplayTimeout:6000,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+</script> 
+</body>
+</html>

@@ -1,5 +1,7 @@
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color:rgb(105, 70, 70);
+ }
 
 *, *:before, *:after {
   box-sizing: inherit; }
@@ -53,6 +55,20 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+.col-02 {
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.banner h1 {
+  font-size:40px;
+  color:white;
+}
+
+.banner p {
+  color:white;
+}
 
 .wrapper {
   position: relative;
